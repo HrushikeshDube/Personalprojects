@@ -1,0 +1,762 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --hoverTextColor:rgb(214, 28, 131);
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family:'Times New Roman', Times, serif ;
+    color: rgb(87,85, 85);
+}
+header{
+    height: 80px;
+    background-color:white;
+    display:flex;
+    align-items: center;
+    outline: 1px solid #ccc;
+    justify-content: space-between;
+    position:sticky;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.right{
+   display: flex;
+   align-items: center;
+}
+.logo{
+    padding: 1px 1px;
+}
+.inputcontainer{
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 360px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+.input{
+   border: none;
+   outline: none;
+   width: 100%;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: medium;
+   padding: 0px 10px;
+}
+.search{
+  padding: 15px 10px;
+}
+.close{
+   padding-right: 12px;
+}
+.downloadcontainer{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+
+}
+.downloadcontainer:hover{
+    color: var(--hoverTextColor);
+    cursor: pointer;
+    border-bottom: 4px solid var(--hoverTextColor);
+}
+.dname{
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: white;
+}
+.dbtn img{
+  display: block;
+  width: 150px;
+  padding-top: 29px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  background-color: white;
+}
+.downloadhovercontainer{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    top: 65px;
+    display: none;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    z-index: 2;
+
+}
+.downloadcontainer:hover .downloadhovercontainer{
+    display: block;
+
+}
+
+.mobicon{
+ padding: 0px 12px;
+}
+  
+.suplliercontainer{
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 20px;
+  border-right: 2px solid grey;
+  border-left: 2px solid grey;
+}
+.suplliercontainer:hover{
+    color: var(--hoverTextColor);
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.ho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 4px solid transparent;
+}
+.ho:hover{
+    color: var(--hoverTextColor);
+    border-bottom: 4px solid var(--hoverTextColor);
+}
+.hoverprofilecontainer{
+    position: absolute;
+    display: none;
+    height: 200px;
+    width: 250px;
+    bottom: 0;
+    top: 84px;
+    right: 15px;
+    padding-left: 15px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    background-color: white;
+}
+.profile:hover .hoverprofilecontainer{
+ display: block;
+}
+h4{
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+h5{
+ font-weight: 100;
+ font-size: small;
+}
+.signbtn{
+  width: 95%;
+  height: 50px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 5px;
+ background-color:purple;
+ color: white;
+ font-size: 18px;
+ font-weight: 18px;
+ font-family:'Times New Roman', Times, serif;
+}
+.myorder{
+ display: flex;
+ align-items: center;
+ padding-right: 100px;
+ padding-left: 0px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ margin-top: 0.0001px;
+ margin-right: 10px;
+ border-top: 1px solid #ccc;
+}
+.bagicon{
+  padding-right: 10px;
+}
+.cart{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.cart:hover{
+    color: var(--hoverTextColor);
+    cursor: pointer;
+}
+nav{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height: 60px;
+    background-color: white;
+
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding:0px 10px;
+    height: 100%;
+}
+nav ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin: 0;
+    border-bottom:3px solid transparent;
+}
+nav ul li:hover{
+    border-bottom: 4px solid var(--hoverTextColor);
+    color: var(--hoverTextColor);
+    cursor: pointer;
+}
+li{
+    font-size: 20px;
+    font-weight: 500;
+}
+.photo1{
+    display: flex;
+    margin: 50px auto;
+    max-width: 1028px;
+    background-color: whitesmoke;
+    z-index: 1;
+
+}
+.right_text{
+    width: 50%;
+    padding: 30px 30px;
+}
+.left_img{
+    width: 50%;
+}
+.right_text h1{
+    font-size: 40px;
+    color: black;
+}
+.serviceicons{
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+    background-color:white;
+    border-radius: 5px;
+}
+.ic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12px;
+}
+.ic1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 10px;
+    padding-right: 5px;
+    border-right: 1px solid #2c2c2c;
+    border-left: 1px solid #302e2e;
+}
+.tag{
+    padding-left: 10px;
+}
+.downloadbtn button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:var(--hoverTextColor);
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font: 100;
+    color: white;
+    width: 280px;
+    height: 40px;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+.topcat{
+width: 1100px;
+margin: auto;
+}
+.toptext{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.lines{
+    padding: 1px;
+    background-color: var(--hoverTextColor);
+    width: 50%;
+}
+.toptext h1{
+    width: 1000px;
+    color: black;
+    padding-left: 50px;
+    padding-right: 4px;
+}
+.topcategories{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://images.meesho.com/images/marketing/1690978075606_1200.webp);
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-left: 5px;
+    padding-top: 100px;
+    justify-content: space-evenly;
+}
+.topcategories img:hover{
+    cursor: pointer;
+}
+.fashioncon1{
+    width: 420px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: white;
+}
+.fashioncon1 img{
+    width: 420px;
+    height: 400px;
+}
+.fashioncon2{
+    width: 280px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+.fashioncon2 img{
+    width: 280px;
+    height: 300px;
+}
+.fashioncon3{
+    width: 280px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+.fashioncon3 img{
+    width: 280px;
+    height: 300px;
+}
+.esentials{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+    background-image: url("https://images.meesho.com/images/marketing/1690978159839_1200.webp");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+.essenbtn1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 400px;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    margin-right: 10px;
+}
+.essenbutn{
+    padding: 5px 5px;
+    width: 170px;
+    height: 60px;
+    border-radius: 15px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    right: 10px;
+    cursor: pointer;
+    background-color:orange;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.essenimg{
+    display: flex;
+    margin-right: 60px;
+}
+.essenimg:hover{
+    cursor: pointer;
+}
+.eimg1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.Newstyle{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+    background-image: url("https://images.meesho.com/images/marketing/1690977922312_1200.webp");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+.stylebtn1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 400px;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    margin-right: 10px;
+}
+.stylebutn{
+    padding: 5px 5px;
+    width: 170px;
+    height: 60px;
+    border-radius: 15px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    right: 10px;
+    cursor: pointer;
+    background-color:orange;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.styleimg{
+    display: flex;
+    margin-right: 60px;
+}
+.styleimg:hover{
+    cursor: pointer;
+}
+.simg1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.reseller{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://images.meesho.com/images/pow/downloadBannerDesktop_1050.webp);
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.reseller h4{
+ font-size: 30px;
+ font-weight: 100;
+ font-family: 'Times New Roman', Times, serif;
+ font-style:normal;
+ color: rgb(88, 120, 224);
+ padding: 20px 0px;
+ margin-top: 45px;
+ position: relative;
+ left: 280px;
+}
+.reseller h1{
+ font-size: 50px;
+ font-weight: 400;
+ color: purple;
+}
+.move{
+    position: relative;
+    left: 120px;
+}
+.resselimg{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+}
+.resselimg img{
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    position: relative;
+    left: 250px;
+}
+.resselimg img:hover{
+    cursor: pointer;
+}
+.reselright{
+    position: relative;
+    left: 500px;
+}
+.msupplier{
+    width: 100%;
+    height: 250px;
+    background-image: url(https://images.meesho.com/images/pow/supplyBannerDesktop_1106.webp);
+    margin-bottom: 60px;
+}
+.register h1{
+ color: white;
+ font-weight: 600;
+ font-size: 32px;
+}
+.register h4{
+ font-size: 18px;
+ color: white;
+ font-weight: 30;
+}
+.tick{
+    display: flex;
+    align-items:center;
+}
+.bh h3{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 50px;
+}
+.tick h3{
+  font-size: 18px;
+  color: white;
+  font-weight:100 ;
+  margin-top: 25px;
+  margin-right: 30px;
+}
+.btnsup button{
+ width: 130px;
+ height: 60px;
+ color: var(--hoverTextColor);
+ font-weight: 900;
+ font-size: 15px;
+ border-radius: 8px;
+ border:none;
+ margin-top: 30px;
+}
+.btnsup button:hover{
+    cursor: pointer;
+}
+.mleft{
+    position: relative;
+    left: 60px;
+    top: 20px;
+}
+.product{
+    display: flex;
+    background-color:white;
+    padding-left: 10px;
+    width: 100%;
+    height: 1750px;
+}
+.productleft h1{
+ font-weight: 10;
+ font-size: 35px;
+ margin-top: 10px;
+}
+select{
+    width: 260px;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:white;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 20px;
+    box-shadow: none;
+}
+.filter{
+    width:240px ;
+    border:0.5px ridge grey;
+    border-radius:5px ;
+    height: 1280px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.filter h4{
+    font-size: 20px;
+    color: rgb(44, 42, 42);
+    font-weight: 70;
+}
+.filter h6{
+    font-size:15px ;
+    font-weight: 40;
+    color: grey;
+    width: 230px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+.finp{
+    display: flex;
+    width: 230px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.checkbox1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.c1{
+    margin-right: 10px;
+}
+#s{
+    position: relative;
+    top: 100px;
+}
+input.c1{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 15px;
+    height: 15px;
+    outline: 1px solid grey;
+}
+.showmore{
+    color: var(--hoverTextColor);
+    margin-left: 8px;
+    width: 210px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 10px;
+    border-bottom: 1px solid grey;
+}
+.showmore{
+    cursor: pointer;
+}
+.gender{
+    width: 200px;
+}
+.productright{
+    position: relative;
+    top: 80px;
+    margin-bottom: 30px;
+}
+.card1{
+    margin-bottom: 20px;
+    width: 70vw;
+    height: 60vh;
+    position: relative;
+    left: 80px;
+    background-color:white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card1:hover{
+ cursor: pointer;
+}
+.carditem{
+    background-color: white;
+    height: 98%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    top: 3px;
+    margin-left: 25px;
+    margin-right: 35px;
+    border: 1px solid grey;
+}
+.carditem img{
+    height:35vh;
+    width: 15vw;
+    border-radius:10px ;
+    margin-bottom: 14px;
+}
+.carditem h3{
+    font-weight: 30;
+    color: grey;
+    margin-left:10px ;
+    margin-bottom:13px;
+}
+.carditem h2{
+    color: black;
+    margin-left: 10px;
+}
+.foot{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+.non{
+  position: relative;
+  right: 160px;
+  bottom: 0px;
+}
+.non h2{
+ font-size: 35px;
+ font-weight: 1;
+ color: black;
+}
+.non h4,h5{
+ font-size: 20px;
+ font-weight: 1;
+ margin-bottom:5px;
+ padding-bottom: 1px;
+}
+.carrer h4{
+    font-size: 20px;
+    font-weight: 1;
+    margin-bottom:5px;
+    padding-bottom: 1px;
+    position: relative;
+    right: 120px;
+    bottom: 35px;
+    color: black;
+}
+.third h4{
+    font-size: 20px;
+    font-weight: 1;
+    margin-bottom:5px;
+    padding-bottom: 1px;
+    position: relative;
+    right: 80px;
+    bottom: 55px;
+    color: black;
+}
+.four h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom:5px;
+    padding-bottom: 1px;
+    position: relative;
+    right: 30px;
+    bottom: 90px;
+    color: black;
+}
+.five{
+    margin-bottom:5px;
+    padding-bottom: 1px;
+    position: relative;
+    right: 0px;
+    left: 20px;
+    bottom: 75px;
+    color: black;
+}
+.socialm img{
+    padding-left: 10px;
+    margin-top: 5px;
+    position: relative;
+    right: 10px;
+}
+.five h2{
+    font-size: 20px;
+    font-weight: 1000;
+}
+.last{
+    background-color: #ccc;
+}
